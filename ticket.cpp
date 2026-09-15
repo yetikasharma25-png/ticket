@@ -2,7 +2,6 @@
 #include <fstream>
 #include <string>
 using namespace std;
-
 class Ticket {
 private:
     int bookingID;
@@ -21,7 +20,6 @@ public:
 
     void bookTicket() {
         ofstream file("bookings.txt", ios::app);
-
         cout << "\nEnter Booking ID: ";
         cin >> bookingID;
         cin.ignore();
